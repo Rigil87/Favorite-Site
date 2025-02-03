@@ -1,0 +1,74 @@
+/* Styles for the banner */
+.banner {
+    position: relative; /* Needed to position the text over the image */
+    height: 600px; /* Set the desired height for the banner */
+    overflow: hidden; /* Ensure the image doesn't overflow the banner */
+}
+
+.banner-image {
+    width: 100%; /* Make the image full width */
+    height: 100%; /* Scale the height to the banner's height */
+    object-fit: cover; /* Maintain the aspect ratio and cover the banner area */
+}
+
+.banner-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Adjust top position */
+    left: 25%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Align the center */
+    color: #fff; /* Text color */
+    text-align: left; /* Left align text */
+    background: transparent; /* Transparent background */
+    padding: 10px; /* Padding for the text */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 50%;
+}
+
+/* Styles for the cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: absolute; /* Position it inside the banner */
+    bottom: 20px; /* Position the cards at the bottom of the banner */
+    width: 100%;
+}
+
+.card {
+    background: transparent; /* Transparent background */
+    border: none; /* Remove all borders */
+    border-top: 2px solid rgb(111, 111, 111); /* Show only top border */
+    padding: 20px;
+    width: 30%;
+    border-radius: 0;
+    text-align: left;
+    color: #fff;
+}
+
+
+.card h6 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/* Styles for the round button */
+.btn-round {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    border-color:  #ff4444;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-round:hover {
+    background: #ff0000;
+}

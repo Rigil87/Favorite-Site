@@ -1,0 +1,84 @@
+/* header.css */
+
+/* Custom styles for the navbar */
+.navbar-custom {
+    background-color: #000 !important; /* Black background color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-toggler-icon {
+    color: #fff !important; /* White text color */
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #fff !important; /* White border for the toggler */
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #000 !important; /* Black background color for dropdown */
+}
+
+.navbar-custom .dropdown-item {
+    color: #fff !important; /* White text color for dropdown items */
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #333 !important; /* Darker color on hover */
+}
+
+/* Transparent search bar */
+.transparent-search {
+    background-color: transparent !important; /*search bar background*/
+    border: 1px solid #6a6a6a !important; /*search bar border */
+    color: #fff !important; /*search bar text color when typing*/
+}
+
+.transparent-search::placeholder {
+    color: #6a6a6a !important;
+}
+
+.transparent-search:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+
+/* Custom styles for the Live button */
+.btn-live {
+    background-color: transparent !important; /* Custom background color */
+    border-color: #d43f3a !important; /* Custom border color */
+    color: #fff !important; /* White text color */
+    font-size: small; /* Text size within button */
+    border-radius: 0; /* removes the rounder edges */
+}
+
+.btn-live:hover {
+    background-color: #c9302c !important; /* Darker background on hover */
+    border-color: #ac2925 !important; /* Darker border on hover */
+    color: #fff !important; /* White text color on hover */
+}
+
+.btn-live:focus {
+    box-shadow: 0 0 10px rgba(217, 83, 79, 0.5) !important; /* Glow effect on focus */
+}
+
+/* Optional: Add an animation to the button */
+@keyframes live-pulse {
+    0% { box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(217, 83, 79, 1); }
+    100% { box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); }
+}
+
+.btn-live:hover {
+    animation: live-pulse 1s infinite;
+}
+/* Add these rules to your CSS */
+
+/* Dropdown toggle rotation */
+.dropdown-toggle::after {
+    transition: transform 0.3s; /* Smooth transition for rotation */
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg); /* Rotate 180 degrees when expanded */
+}

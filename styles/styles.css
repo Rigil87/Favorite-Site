@@ -1,0 +1,18 @@
+/* General reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Additional styles for specific components if needed */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure no spaces between placeholders */
+#header-placeholder, #banner-placeholder, #featured-news-placeholder, #footer-placeholder {
+    margin: 0;
+    padding: 0;
+}
