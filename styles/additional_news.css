@@ -1,0 +1,60 @@
+/* General container styles for additional content */
+.additional-container {
+    text-align: center;
+    width: 100%; /* Full width of container */
+    margin: 0 auto; /* Center the container */
+    padding: 10px;
+}
+
+/* News cards layout */
+.news-cards-2 {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 5px; /* Reduce gap between cards */
+}
+
+.news-card-2 {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    background: transparent; /* Transparent background */
+    padding: 5px; /* Reduce padding */
+    overflow: hidden; /* Ensure content fits in card */
+    color: #000; /* Text color to black */
+    flex: 0 1 22%; /* Adjust width for each card */
+    border: none; /* Remove border */
+    margin: 5px; /* Reduce margin */
+}
+
+.news-image-2 {
+    width: 80px; /* Fixed width for circle shape */
+    height: 80px; /* Fixed height for circle shape */
+    object-fit: cover; /* Cover area without distortion */
+    border-radius: 50%; /* Circle shape */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* News content positioning */
+.news-content-2 {
+    text-align: left; /* Align text to the left */
+    color: #000; /* Text color to black */
+    
+}
+
+/* Headline styles */
+.news-card-2 h3 {
+    margin: 0 0 5px;
+    font-size: .8rem;
+}
+
+.news-card-2 p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #000; /* Text color to black */
+}
+
+/* Specific styles for each card */
+.card-5, .card-6, .card-7, .card-8 {
+    height: 100px; /* Uniform height for all cards */
+}
+ 

@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.education-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.education-card {
+    flex: 1 1 calc(25% - 50px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.education-card h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: center;
+    text-shadow: 1px -1px black;
+}
+
+.education-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}

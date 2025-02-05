@@ -46,22 +46,21 @@
     background: transparent; /* Semi-transparent background */
     padding: 10px; /* Padding for the text */
     box-sizing: border-box; /* Ensure padding is included in width */
-    color: #fff;
-    border-radius: 0; /* Remove rounded corners */
-    box-shadow: none !important; /* Remove any shadow */
-    border: none; /* Remove any border */
+    color: white;
+    text-shadow:2px -2px black;
 }
 
 .news-card h3 {
     margin: 0 0 5px;
     font-size: 1rem;
     text-align: left;
+    top: 15px;
 }
 
 .news-card p {
     margin: 0;
     font-size: 0.9rem;
-    color: #ddd;
+    color: white;
     text-align: left;
 }
 
