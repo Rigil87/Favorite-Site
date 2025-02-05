@@ -42,16 +42,22 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.rel = 'stylesheet';
                     link.href = 'styles/education.css';
                     document.head.appendChild(link);
-                } else if ( component === 'third_banner.html') {
+                } else if (component === 'third_banner.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/third_banner.css';
+                    document.head.appendChild(link);
+                } else if (component === 'newsletter-form.html') {  // Add this block for newsletter form
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = 'styles/newsletter-form.css';
                     document.head.appendChild(link);
                 } else if (component === 'footer.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/footer.css';
                     document.head.appendChild(link);
+
                 }
             });
     }
@@ -64,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadComponent('second_banner.html', 'second-banner-placeholder');
     loadComponent('education.html', 'education-placeholder');
     loadComponent('third_banner.html', 'third-banner-placeholder');
+    loadComponent('newsletter-form.html', 'newsletter-placeholder'); 
     loadComponent('footer.html', 'footer-placeholder');
 
 });
