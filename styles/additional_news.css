@@ -1,60 +1,61 @@
 /* General container styles for additional content */
 .additional-container {
-    text-align: center;
-    width: 100%; /* Full width of container */
-    margin: 0 auto; /* Center the container */
-    padding: 10px;
+    text-align: center; /* Center-align text within the container */
+    width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add padding inside the container */
 }
 
 /* News cards layout */
 .news-cards-2 {
-    display: flex; /* Flexbox for layout */
-    justify-content: center; /* Center items */
-    flex-wrap: wrap; /* Allow wrapping */
-    gap: 5px; /* Reduce gap between cards */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow wrapping of the cards to the next line */
+    gap: 5px; /* Reduce gap between the cards */
 }
 
+/* General styles for individual news cards */
 .news-card-2 {
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
+    align-items: center; /* Center items vertically */
     background: transparent; /* Transparent background */
-    padding: 5px; /* Reduce padding */
-    overflow: hidden; /* Ensure content fits in card */
-    color: #000; /* Text color to black */
+    padding: 5px; /* Reduce padding inside the card */
+    overflow: hidden; /* Ensure content fits within the card */
+    color: #000; /* Set text color to black */
     flex: 0 1 22%; /* Adjust width for each card */
     border: none; /* Remove border */
-    margin: 5px; /* Reduce margin */
+    margin: 5px; /* Reduce margin around the card */
 }
 
+/* Styles for the images within news cards */
 .news-image-2 {
     width: 80px; /* Fixed width for circle shape */
     height: 80px; /* Fixed height for circle shape */
-    object-fit: cover; /* Cover area without distortion */
-    border-radius: 50%; /* Circle shape */
-    flex-shrink: 0; /* Prevent image from shrinking */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 50%; /* Create a circle shape */
+    flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 /* News content positioning */
 .news-content-2 {
     text-align: left; /* Align text to the left */
-    color: #000; /* Text color to black */
-    
+    color: #000; /* Set text color to black */
 }
 
 /* Headline styles */
 .news-card-2 h3 {
-    margin: 0 0 5px;
-    font-size: .8rem;
+    margin: 0 0 5px; /* Add margin below the header */
+    font-size: 0.8rem; /* Set the font size for the header */
 }
 
+/* Paragraph styles within news cards */
 .news-card-2 p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #000; /* Text color to black */
+    margin: 0; /* Remove margin */
+    font-size: 0.9rem; /* Set the font size for the paragraph */
+    color: #000; /* Set text color to black */
 }
 
 /* Specific styles for each card */
 .card-5, .card-6, .card-7, .card-8 {
     height: 100px; /* Uniform height for all cards */
 }
- 

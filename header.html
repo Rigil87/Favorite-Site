@@ -1,84 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles/header.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
-        <div class="container-fluid">
-            <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Home</a></li>
-                            <li><a class="dropdown-item" href="#">Missions</a></li>
-                            <li><a class="dropdown-item" href="#">Humans in Space</a></li>
-                            <li><a class="dropdown-item" href="#">Earth & Climate</a></li>
-                            <li><a class="dropdown-item" href="#">The Solar System</a></li>
-                            <li><a class="dropdown-item" href="#">The Universe</a></li>
-                            <li><a class="dropdown-item" href="#">Science</a></li>
-                            <li><a class="dropdown-item" href="#">Aeronautics</a></li>
-                            <li><a class="dropdown-item" href="#">Technology</a></li>
-                            <li><a class="dropdown-item" href="#">Learning Resources</a></li>
-                            <li><a class="dropdown-item" href="#">About Travis</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                        </ul>
-                    </li>
-                    <form class="d-flex" role="search" style="margin-right: 10px;">
-                        <input class="form-control me-2 transparent-search" type="search" placeholder="Search..." aria-label="Search">
-                    </form>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News & Events</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">News & Events</a></li>
-                            <li><a class="dropdown-item" href="#">All Travis News</a></li>
-                            <li><a class="dropdown-item" href="#">Video Series on Travis</a></li>
-                            <li><a class="dropdown-item" href="#">Podcasts</a></li>
-                            <li><a class="dropdown-item" href="#">Blogs</a></li>
-                            <li><a class="dropdown-item" href="#">Newsletters</a></li>
-                            <li><a class="dropdown-item" href="#">Social Media</a></li>
-                            <li><a class="dropdown-item" href="#">Media Resources</a></li>
-                            <li><a class="dropdown-item" href="#">Events</a></li>
-                            <li><a class="dropdown-item" href="#">Upcoming Launches & Landings</a></li>
-                            <li><a class="dropdown-item" href="#">Virtual Guest Program</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Multimedia</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Multimedia</a></li>
-                            <li><a class="dropdown-item" href="#">Travis+</a></li>
-                            <li><a class="dropdown-item" href="#">Travis Live</a></li>
-                            <li><a class="dropdown-item" href="#">Travis Apps</a></li>
-                            <li><a class="dropdown-item" href="#">Podcasts</a></li>
-                            <li><a class="dropdown-item" href="#">Image of the Day</a></li>
-                            <li><a class="dropdown-item" href="#">e-Books</a></li>
-                            <li><a class="dropdown-item" href="#">Sounds and Ringtones</a></li>
-                            <li><a class="dropdown-item" href="#">Interactives</a></li>
-                            <li><a class="dropdown-item" href="#">STEM Multimedia</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Travis+</a>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-live">LIVE</button>
-                    </li>
-                </ul>
-            </div>
+<!-- header.html -->
+<!-- Navigation bar starts here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+    <div class="container-fluid">
+        <!-- Button for toggling the navbar in smaller viewports -->
+        <button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Dropdown menu for Explore section -->
+                <li class="nav-item dropdown">
+                    <a id="exploreDropdown" class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                    <!-- Dropdown items for Explore section -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Missions</a></li>
+                        <li><a class="dropdown-item" href="#">Humans in Space</a></li>
+                        <li><a class="dropdown-item" href="#">Earth & Climate</a></li>
+                        <li><a class="dropdown-item" href="#">The Solar System</a></li>
+                        <li><a class="dropdown-item" href="#">The Universe</a></li>
+                        <li><a class="dropdown-item" href="#">Science</a></li>
+                        <li><a class="dropdown-item" href="#">Aeronautics</a></li>
+                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                        <li><a class="dropdown-item" href="#">Learning Resources</a></li>
+                        <li><a class="dropdown-item" href="#">About Travis</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                </li>
+
+                <!-- Search form -->
+                <form class="d-flex" role="search" style="margin-right: 10px;">
+                    <input class="form-control me-2 transparent-search" type="search" placeholder="Search..." aria-label="Search">
+                </form>
+            </ul>
+
+            <!-- Navbar items aligned to the right -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- Dropdown menu for News & Events section -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News & Events</a>
+                    <!-- Dropdown items for News & Events section -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">News & Events</a></li>
+                        <li><a class="dropdown-item" href="#">All Travis News</a></li>
+                        <li><a class="dropdown-item" href="#">Video Series on Travis</a></li>
+                        <li><a class="dropdown-item" href="#">Podcasts</a></li>
+                        <li><a class="dropdown-item" href="#">Blogs</a></li>
+                        <li><a class="dropdown-item" href="#">Newsletters</a></li>
+                        <li><a class="dropdown-item" href="#">Social Media</a></li>
+                        <li><a class="dropdown-item" href="#">Media Resources</a></li>
+                        <li><a class="dropdown-item" href="#">Events</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Launches & Landings</a></li>
+                        <li><a class="dropdown-item" href="#">Virtual Guest Program</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu for Multimedia section -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Multimedia</a>
+                    <!-- Dropdown items for Multimedia section -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                        <li><a class="dropdown-item" href="#">Travis+</a></li>
+                        <li><a class="dropdown-item" href="#">Travis Live</a></li>
+                        <li><a class="dropdown-item" href="#">Travis Apps</a></li>
+                        <li><a class="dropdown-item" href="#">Podcasts</a></li>
+                        <li><a class="dropdown-item" href="#">Image of the Day</a></li>
+                        <li><a class="dropdown-item" href="#">e-Books</a></li>
+                        <li><a class="dropdown-item" href="#">Sounds and Ringtones</a></li>
+                        <li><a class="dropdown-item" href="#">Interactives</a></li>
+                        <li><a class="dropdown-item" href="#">STEM Multimedia</a></li>
+                    </ul>
+                </li>
+
+                <!-- Static link for Travis+ -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Travis+</a>
+                </li>
+
+                <!-- Button for live content -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-live">LIVE</button>
+                </li>
+            </ul>
         </div>
-    </nav>
-</body>
-</html>
+    </div>
+</nav>
+<!-- Navigation bar ends here -->

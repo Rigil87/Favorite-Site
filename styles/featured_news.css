@@ -1,89 +1,100 @@
 /* Styles for the Featured News section */
+
+/* General container styles */
 .container {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Add padding inside the container */
+    text-align: center; /* Center-align text within the container */
 }
 
+/* Styles for the header within the container */
 .container h1 {
-    text-align: left;
-    font-weight: bold;
-    padding: 40px 40px 40px 10px;
-    font-size: 3.5rem;
+    text-align: left; /* Align the header text to the left */
+    font-weight: bold; /* Make the header text bold */
+    padding: 40px 40px 40px 10px; /* Add padding around the header */
+    font-size: 3.5rem; /* Set the font size for the header */
 }
 
+/* Styles for the news cards container */
 .news-cards {
     display: flex; /* Use flexbox to arrange items */
-    justify-content: space-between; /* Space them evenly */
+    justify-content: space-between; /* Space the items evenly */
     flex-wrap: wrap; /* Wrap cards to the next line if necessary */
 }
 
+/* General styles for individual news cards */
 .news-card {
     position: relative; /* Needed to position text over the image */
     background: transparent; /* Transparent background */
     border-radius: 0; /* Remove rounded corners */
-    padding: 10px;
+    padding: 10px; /* Add padding inside the card */
     overflow: hidden; /* Ensure content stays within the card */
-    color: #fff;
+    color: #fff; /* Set text color to white */
     flex: 1 1 auto; /* Allow cards to shrink and grow */
     box-shadow: none !important; /* Remove any shadow */
     border: none; /* Remove any border */
 }
 
+/* Styles for the images within news cards */
 .news-image {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Make the image full width */
+    height: 100%; /* Make the image full height */
     object-fit: cover; /* Ensure images cover the area without distortion */
     border-radius: 0; /* Remove rounded corners from the image */
     box-shadow: none !important; /* Remove any shadow */
     border: none; /* Remove any border */
 }
 
+/* Styles for the content within news cards */
 .news-content {
     position: absolute; /* Position text over the image */
     bottom: 0; /* Align text to the bottom */
-    left: 0;
-    width: 100%;
+    left: 0; /* Align text to the left */
+    width: 100%; /* Make the content full width */
     background: transparent; /* Semi-transparent background */
     padding: 10px; /* Padding for the text */
     box-sizing: border-box; /* Ensure padding is included in width */
-    color: white;
-    text-shadow:2px -2px black;
+    color: white; /* Set text color to white */
+    text-shadow: 2px -2px black; /* Add a black text shadow */
 }
 
+/* Styles for the headers within news cards */
 .news-card h3 {
-    margin: 0 0 5px;
-    font-size: 1rem;
-    text-align: left;
-    top: 15px;
+    margin: 0 0 5px; /* Add margin below the header */
+    font-size: 1rem; /* Set the font size for the header */
+    text-align: left; /* Align the header text to the left */
+    top: 15px; /* Set the position from the top */
 }
 
+/* Styles for the paragraphs within news cards */
 .news-card p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: white;
-    text-align: left;
+    margin: 0; /* Remove margin */
+    font-size: 0.9rem; /* Set the font size for the paragraph */
+    color: white; /* Set text color to white */
+    text-align: left; /* Align the paragraph text to the left */
 }
 
 /* Specific styles for each card */
 .card-1 {
     flex: 2 1 47%; /* Make card 1 wider */
-    height: 300px; /* Height for card 1 */
+    height: 300px; /* Set the height for card 1 */
     border: none; /* Remove any border */
 }
 
 .card-2 {
-    flex: 1 1 15%; /* Adjust width for card 2 */
-    height: 300px; /* Height for card 2 */
+    flex: 1 1 15%; /* Adjust the width for card 2 */
+    height: 300px; /* Set the height for card 2 */
     border: none; /* Remove any border */
 }
 
+/* Container for card 3 and card 4 */
 .card-3-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* Two equal rows */
-    flex: 1 1 15%; /* Adjust width for card 3 and card 4 container */
+    display: grid; /* Use grid layout for the container */
+    grid-template-rows: 1fr 1fr; /* Create two equal rows */
+    flex: 1 1 15%; /* Adjust the width for the container */
 }
 
+/* Styles for card 3 and card 4 */
 .card-3, .card-4 {
-    height: 150px; /* Height for card 3 and card 4 */
+    height: 150px; /* Set the height for card 3 and card 4 */
     margin: 0; /* Remove margin */
 }

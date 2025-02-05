@@ -13,62 +13,65 @@
 
 .banner-text {
     position: absolute; /* Position the text over the image */
-    top: 50%; /* Adjust top position */
+    top: 50%; /* Adjust top position to center vertically */
     left: 25%; /* Center the text horizontally */
     transform: translate(-50%, -50%); /* Align the center */
-    color: #fff; /* Text color */
-    text-align: left; /* Left align text */
+    color: #fff; /* Set text color to white */
+    text-align: left; /* Align text to the left */
     background: transparent; /* Transparent background */
-    padding: 10px; /* Padding for the text */
-    border-radius: 5px; /* Rounded corners */
-    max-width: 50%;
+    padding: 10px; /* Add padding for the text */
+    border-radius: 5px; /* Add rounded corners to the text container */
+    max-width: 50%; /* Set maximum width for the text container */
 }
 
-/* Styles for the cards */
+/* Styles for the card container */
 .card-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    position: absolute; /* Position it inside the banner */
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: space-around; /* Space the items evenly around */
+    padding: 20px; /* Add padding around the cards */
+    position: absolute; /* Position the container inside the banner */
     bottom: 20px; /* Position the cards at the bottom of the banner */
-    width: 100%;
+    width: 100%; /* Full width for the container */
 }
 
+/* General styles for individual cards */
 .card {
     background: transparent; /* Transparent background */
     border: none; /* Remove all borders */
     border-top: 2px solid rgb(111, 111, 111); /* Show only top border */
-    padding: 20px;
-    width: 30%;
-    border-radius: 0;
-    text-align: left;
-    color: #fff;
+    padding: 20px; /* Add padding inside the card */
+    width: 30%; /* Set width for the card */
+    border-radius: 0; /* Remove rounded corners */
+    text-align: left; /* Align text to the left */
+    color: #fff; /* Set text color to white */
 }
 
-
+/* Styles for the headers within the cards */
 .card h6 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add margin below the header */
 }
 
+/* Styles for the paragraphs within the cards */
 .card p {
-    margin: 0;
-    display: flex;
-    align-items: left;
-    justify-content: left;
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for paragraph */
+    align-items: left; /* Align items to the left */
+    justify-content: left; /* Justify content to the left */
 }
 
 /* Styles for the round button */
 .btn-round {
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    border-color:  #ff4444;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    width: 25px; /* Set width for the button */
+    height: 25px; /* Set height for the button */
+    background: transparent; /* Transparent background */
+    border-radius: 50%; /* Make the button round */
+    border-color: #ff4444; /* Set border color */
+    margin-left: 10px; /* Add margin to the left */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background 0.3s ease; /* Smooth transition for background color */
 }
 
+/* Hover effect for the round button */
 .btn-round:hover {
-    background: #ff0000;
+    background: #ff0000; /* Change background color on hover */
 }

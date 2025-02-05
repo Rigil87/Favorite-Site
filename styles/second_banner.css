@@ -1,39 +1,44 @@
 /* styles.css */
 
+/* Styles for the second banner */
 .banner-2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex; /* Use flexbox layout for the banner */
+    justify-content: flex-start; /* Align items to the start of the main axis */
+    align-items: center; /* Align items to the center of the cross axis */
     height: 400px; /* Adjust the height as needed */
     background-color: black; /* Adjust the background color as needed */
     padding: 20px; /* Add padding if needed */
 }
 
+/* Styles for the text container in the second banner */
 .banner-text-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-right: 20px;
+    display: flex; /* Use flexbox layout for the text container */
+    flex-direction: column; /* Arrange children elements in a column */
+    justify-content: center; /* Center the text vertically */
+    align-items: flex-start; /* Align text to the start of the cross axis */
+    margin-right: 20px; /* Add space to the right of the text container */
     padding-left: 20px; /* Add some space between the text and the video */
 }
 
+/* Styles for the header and paragraph text in the second banner */
 .banner-text-2 h6, .banner-text-2 p {
-    margin: 0;
-    text-align: left;
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
     color: white; /* Adjust text color if needed */
-    padding-left: 40%;
+    padding-left: 40%; /* Add padding to the left of the text */
 }
 
+/* Styles for the video container in the second banner */
 .banner-2-video-container {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    padding-right: 150px;
+    display: flex; /* Use flexbox layout for the video container */
+    justify-content: flex-end; /* Align items to the end of the main axis */
+    flex: 1; /* Allow the container to grow and fill available space */
+    padding-right: 150px; /* Add padding to the right of the video container */
 }
 
+/* Styles for the embedded video in the second banner */
 .banner-video {
     width: 100%; /* Adjust the width as needed */
-    height: 375px;
-    max-width: 70%;
+    height: 375px; /* Set a fixed height for the video */
+    max-width: 70%; /* Set a maximum width for the video */
 }

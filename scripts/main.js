@@ -1,12 +1,17 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
+    
+    // Function to load a component dynamically
     function loadComponent(component, targetId) {
+        // Fetch the component's HTML content
         fetch(component)
-            .then(response => response.text())
+            .then(response => response.text())  // Convert the response to text
             .then(data => {
+                // Insert the fetched content into the target element
                 document.getElementById(targetId).innerHTML = data;
             })
             .then(() => {
-                // Load corresponding CSS file
+                // Load corresponding CSS file based on the component's name
                 if (component === 'header.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
@@ -37,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.rel = 'stylesheet';
                     link.href = 'styles/education.css';
                     document.head.appendChild(link);
-                } else if (component === 'third_banner.html') {
+                } else if ( component === 'third_banner.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/third_banner.css';
@@ -51,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
+    // Load components into their respective placeholders
     loadComponent('header.html', 'header-placeholder');
     loadComponent('banner.html', 'banner-placeholder');
     loadComponent('featured_news.html', 'featured-news-placeholder');
@@ -59,4 +65,5 @@ document.addEventListener("DOMContentLoaded", function() {
     loadComponent('education.html', 'education-placeholder');
     loadComponent('third_banner.html', 'third-banner-placeholder');
     loadComponent('footer.html', 'footer-placeholder');
+
 });

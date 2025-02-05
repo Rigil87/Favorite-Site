@@ -1,40 +1,45 @@
+/* General styles for the container */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    text-align: center; /* Center-align text within the container */
 }
 
+/* Styles for the education cards container */
 .education-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Use flexbox to arrange items */
+    flex-wrap: wrap; /* Wrap cards to the next line if necessary */
+    gap: 20px; /* Add space between the cards */
+    justify-content: center; /* Center-align the cards within the container */
 }
 
+/* General styles for individual education cards */
 .education-card {
-    flex: 1 1 calc(25% - 50px);
-    box-sizing: border-box;
-    position: relative;
+    flex: 1 1 calc(25% - 50px); /* Allow cards to shrink and grow, with specified basis */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Needed to position text over the image */
 }
 
+/* Styles for the headers within education cards */
 .education-card h3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    padding: 10px;
-    margin: 0;
-    z-index: 1;
-    box-sizing: border-box;
-    text-align: center;
-    text-shadow: 1px -1px black;
+    position: absolute; /* Position text over the image */
+    top: 0; /* Align text to the top */
+    left: 0; /* Align text to the left */
+    width: 100%; /* Full width of the header */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding around the header */
+    margin: 0; /* Remove margin */
+    z-index: 1; /* Ensure text appears above other elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center-align the header text */
+    text-shadow: 1px -1px black; /* Add a black text shadow */
 }
 
+/* Styles for the images within education cards */
 .education-image {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
+    width: 100%; /* Full width of the image */
+    height: 300px; /* Set the height of the image */
+    border-radius: 10px; /* Add rounded corners to the image */
 }
