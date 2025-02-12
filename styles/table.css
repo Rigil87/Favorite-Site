@@ -1,0 +1,34 @@
+/* Container styles */
+.container {
+    padding: 20px;
+}
+
+/* Table styles */
+.table {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.thead-dark th {
+    background-color: #343a40;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Media query for small screens */
+@media (max-width: 400px) {
+    .table-responsive {
+        overflow-x: auto; /* Make the table scrollable on small screens */
+    }
+
+    th, td {
+        font-size: 0.8rem; 
+        padding: 0.5rem; 
+    }
+}

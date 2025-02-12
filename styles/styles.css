@@ -2,7 +2,7 @@
 * {
     margin: 0; /* Remove default margin from all elements */
     padding: 0; /* Remove default padding from all elements */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 /* Additional styles for specific components if needed */
@@ -13,6 +13,6 @@
 
 /* Ensure no spaces between placeholders */
 #header-placeholder, #banner-placeholder, #featured-news-placeholder, #footer-placeholder {
-    margin: 0; /* Remove margin for specified placeholders */
-    padding: 0; /* Remove padding for specified placeholders */
+    margin: 0; 
+    padding: 0; 
 }

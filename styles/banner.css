@@ -1,83 +1,79 @@
-/* Styles for the banner */
+/* Add the following CSS to your styles/styles.css file */
+
 .banner {
-    position: relative; /* Needed to position the text over the image */
-    height: 600px; /* Set the desired height for the banner */
-    overflow: hidden; /* Ensure the image doesn't overflow the banner */
+    position: relative;
+    height: 600px;
+    overflow: hidden;
 }
 
-
-
 .banner-image {
-    width: 100%; /* Make the image full width */
-    height: 100%; /* Scale the height to the banner's height */
-    object-fit: cover; /* Maintain the aspect ratio and cover the banner area */
-    position: absolute; /* Position the image absolutely within the banner */
-    top: 0; /* Align the top of the image with the top of the banner */
-    left: 0; /* Align the left of the image with the left of the banner */
-    z-index: -1; /* Place the image behind the text */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .banner-text {
-    position: absolute; /* Position the text over the image */
-    top: 50%; /* Adjust top position to center vertically */
-    left: 25%; /* Center the text horizontally */
-    transform: translate(-50%, -50%); /* Align the center */
-    color: #fff; /* Set text color to white */
-    text-align: left; /* Align text to the left */
-    background: transparent; /* Transparent background */
-    padding: 10px; /* Add padding for the text */
-    border-radius: 5px; /* Add rounded corners to the text container */
-    max-width: 50%; /* Set maximum width for the text container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 50%;
 }
 
-/* Styles for the card container */
 .card-container {
-    display: flex; /* Use flexbox to arrange items */
-    justify-content: space-around; /* Space the items evenly around */
-    padding: 20px; /* Add padding around the cards */
-    position: absolute; /* Position the container inside the banner */
-    bottom: 20px; /* Position the cards at the bottom of the banner */
-    width: 100%; /* Full width for the container */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 
-/* General styles for individual cards */
 .card {
-    background: transparent; /* Transparent background */
-    border: none; /* Remove all borders */
-    border-top: 2px solid rgb(111, 111, 111); /* Show only top border */
-    padding: 20px; /* Add padding inside the card */
-    width: 30%; /* Set width for the card */
-    border-radius: 0; /* Remove rounded corners */
-    text-align: left; /* Align text to the left */
-    color: #fff; /* Set text color to white */
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0em;
+    border-top: .10em solid black;
 }
 
-/* Styles for the headers within the cards */
+@media (max-width: 550px) {
+    .card-container {
+        display: none;
+    }
+}
+
 .card h6 {
-    margin-bottom: 10px; /* Add margin below the header */
+    margin-bottom: 10px;
 }
 
-/* Styles for the paragraphs within the cards */
 .card p {
-    margin: 0; /* Remove margin */
-    display: flex; /* Use flexbox for paragraph */
-    align-items: left; /* Align items to the left */
-    justify-content: left; /* Justify content to the left */
+    margin: 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
 }
 
-/* Styles for the round button */
 .btn-round {
-    width: 25px; /* Set width for the button */
-    height: 25px; /* Set height for the button */
-    background: transparent; /* Transparent background */
-    border-radius: 50%; /* Make the button round */
-    border-color: #ff4444; /* Set border color */
-    margin-left: 10px; /* Add margin to the left */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background 0.3s ease; /* Smooth transition for background color */
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    border-color: #ff4444;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Hover effect for the round button */
 .btn-round:hover {
-    background: #ff0000; /* Change background color on hover */
+    background: #ff0000;
 }

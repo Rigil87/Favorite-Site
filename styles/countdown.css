@@ -1,0 +1,30 @@
+/* Countdown Container */
+.countdown-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; /* Arrange header above countdown */
+    align-items: center; /* Center-align items */
+    position: relative;
+    width: fit-content;
+    margin: 1rem;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.countdown-container h6 {
+    position: relative;
+    margin-top: .5em;
+    margin-bottom: 0.5rem; /* Add margin below the header */
+    font-size: 1.5rem; /* Set font size for the header */
+    color: #333; /* Set color for the header */
+}
+
+#countdown {
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    text-align: center;
+}

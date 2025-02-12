@@ -20,6 +20,11 @@
     flex: 1 1 calc(25% - 50px); /* Allow cards to shrink and grow, with specified basis */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     position: relative; /* Needed to position text over the image */
+    background-color: #f8f9fa; /* Background color for the card */
+    border: 1px solid #e0e0e0; /* Border for the card */
+    border-radius: 0.5rem; /* Rounded corners for the card */
+    padding: 1rem; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the card */
 }
 
 /* Styles for the headers within education cards */
@@ -42,4 +47,5 @@
     width: 100%; /* Full width of the image */
     height: 300px; /* Set the height of the image */
     border-radius: 10px; /* Add rounded corners to the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
 }

@@ -1,0 +1,50 @@
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.875rem; /* Reduce font size */
+}
+
+/* Container styles */
+.social-container {
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Social Media Share Buttons */
+.social-share-buttons button {
+
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem; 
+}
+
+.social-share-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Social Media Follow Buttons */
+.social-follow-buttons a {
+
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem; /
+}
+
+.social-follow-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .social-share-buttons button,
+    .social-follow-buttons a {
+        display: block;
+        width: 100%;
+    }
+}

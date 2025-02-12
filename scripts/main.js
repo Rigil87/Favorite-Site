@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.rel = 'stylesheet';
                     link.href = 'styles/banner.css';
                     document.head.appendChild(link);
+                } else if (component === 'countdown.html') {
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = 'styles/countdown.css';
+                    document.head.appendChild(link);
                 } else if (component === 'featured_news.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
@@ -47,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.rel = 'stylesheet';
                     link.href = 'styles/third_banner.css';
                     document.head.appendChild(link);
+                } else if (component === 'table.html') {  // Add this block for newsletter form
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = 'styles/table.css';
+                    document.head.appendChild(link);
                 } else if (component === 'newsletter-form.html') {  // Add this block for newsletter form
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
@@ -65,12 +75,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Load components into their respective placeholders
     loadComponent('header.html', 'header-placeholder');
     loadComponent('banner.html', 'banner-placeholder');
+    loadComponent('countdown.html', 'countdown-placeholder');
     loadComponent('featured_news.html', 'featured-news-placeholder');
     loadComponent('additional_news.html', 'additional-news-placeholder');
     loadComponent('second_banner.html', 'second-banner-placeholder');
     loadComponent('education.html', 'education-placeholder');
     loadComponent('third_banner.html', 'third-banner-placeholder');
+    loadComponent('table.html', 'table-placeholder'); 
     loadComponent('newsletter-form.html', 'newsletter-placeholder'); 
+    loadComponent('social_media_buttons.html', 'social-media-placeholder'); 
     loadComponent('footer.html', 'footer-placeholder');
 
 });
