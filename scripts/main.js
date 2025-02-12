@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.rel = 'stylesheet';
                     link.href = 'styles/third_banner.css';
                     document.head.appendChild(link);
-                } else if (component === 'table.html') {  // Add this block for newsletter form
+                } else if (component === 'table.html') {  
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/table.css';
                     document.head.appendChild(link);
-                } else if (component === 'newsletter-form.html') {  // Add this block for newsletter form
+                } else if (component === 'newsletter-form.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/newsletter-form.css';
