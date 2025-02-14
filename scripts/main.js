@@ -1,21 +1,41 @@
 // Wait until the DOM is fully loaded
+// Here we're using the Event Listener to "listen" for the event (DOMContentLoaded)
+// This is triggered when the HTML document has been completely loaded and parsed
+// Does not wait for stylesheets, images, and subframes to finish loading. 
+
+// The function inside the listener will run once the event fires, ensuring the 
+// script runs only after DOM is FULLY constructed
 document.addEventListener("DOMContentLoaded", function() {
     
     // Function to load a component dynamically
-    function loadComponent(component, targetId) {
+    // Takes two parameters
+        // Component (URL of HTML file to be loaded)
+        // targetId (the ID of the element where component will be inserted)
+    
+        function loadComponent(component, targetId) {
+
         // Fetch the component's HTML content
+        // Inside the function, fetch is used to retrieve the component's HTML content.
+        // Initiates a request to the URL provided as component. Returns a promise that resolves
+        // to a Response object
         fetch(component)
-            .then(response => response.text())  // Convert the response to text
+            // Returned response object can be processed further then Convert the response to text
+            .then(response => response.text())   
+            
             .then(data => {
-                // Insert the fetched content into the target element
+                // Insert the fetched content into the target element identified by targetID using innerHTML.
                 document.getElementById(targetId).innerHTML = data;
             })
             .then(() => {
                 // Load corresponding CSS file based on the component's name
+                // Checks if the component being loaded is declared HTML file.
+                // If it is, creates a <link> element to load the corresponding CSS file (ie header.html with header.css) 
                 if (component === 'header.html') {
                     const link = document.createElement('link');
                     link.rel = 'stylesheet';
                     link.href = 'styles/header.css';
+
+                    // The new link utilizes .head to append to the documents <head> to apply the styles
                     document.head.appendChild(link);
                 } else if (component === 'banner.html') {
                     const link = document.createElement('link');
@@ -69,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.head.appendChild(link);
 
                 }
+                
             });
     }
 
